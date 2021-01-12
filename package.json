@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postcss": "postcss dist/scss/main.scss -u autoprefixer cssnano -o src/css/main.css",
-    "scss": "node-sass --output-style compress dist/scss/main.scss -o src/css",
+    "scss": "node-sass dist/scss/main.scss -o src/css",
     "imgmin": "imagemin dist/img/* -o src/img/",
     "uglify": "uglifyjs dist/js/*.js -o src/js/app.js",
-    "build:css": "run-s postcss scss",
+    "build:css": "run-s scss postcss",
     "build:js": "run-s uglify",
     "build:img": "run-s imgmin",
     "build": "run-s build:*",
