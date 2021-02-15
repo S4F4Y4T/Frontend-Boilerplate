@@ -24,6 +24,7 @@ const csstask = () => {
               .pipe(post([autoprefixer(), cssnano()]))
               .pipe(concat('style.css'))
               .pipe(maps.write('.'))
+              .pipe(concat('main.css'))
               .pipe(dest('src/css/'))
               .pipe(browser.stream())
 }
@@ -32,7 +33,7 @@ const csstask = () => {
 const jstask = () => {
     return src(file.js)
               .pipe(uglify())
-              .pipe(concat('all.js'))
+              .pipe(concat('app.js'))
               .pipe(dest('src/js'))
               .pipe(browser.stream())
 }

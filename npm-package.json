@@ -4,34 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss dist/scss/main.scss -u autoprefixer cssnano -o src/css/main.css",
+    "postcss": "postcss src/css/main.css -u autoprefixer cssnano -o src/css/main.css",
     "scss": "node-sass dist/scss/main.scss -o src/css",
     "imgmin": "imagemin dist/img/* -o src/img/",
-    "uglify": "uglifyjs dist/js/*.js -o src/js/app.js",
+    "terser": "terser dist/js/*.js -c -o src/js/app.js",
     "build:css": "run-s scss postcss",
-    "build:js": "run-s uglify",
+    "build:js": "run-s terser",
     "build:img": "run-s imgmin",
     "build": "run-s build:*",
     "watch:css": "onchange \"dist/scss\" -- run-s build:css",
     "watch:js": "onchange \"dist/js\" -- run-s build:js",
     "watch:img": "onchange \"dist/img\" run-s build:img",
-    "server": "browser-sync start --server --files \"dist/scss/*.scss, dist/js/*.js, *.html, !node_modules/**/*.html\"",
+    "server": "browser-sync start --server --files \"dist/scss/**/*.scss, dist/js/*.js, *.html, !node_modules/**/*.html\"",
     "watch": "run-p server watch:*",
     "install": "run-s build watch"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.2.1",
-    "browser-sync": "^2.26.13",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "browser-sync": "^2.26.14",
     "cssnano": "^4.1.10",
     "imagemin-cli": "^6.0.0",
+    "jshint": "^2.12.0",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "postcss": "^8.2.4",
+    "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3",
-    "uglify-js": "^3.12.4"
+    "terser": "^5.6.0"
   }
 }
