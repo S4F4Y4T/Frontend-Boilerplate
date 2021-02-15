@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postcss": "postcss src/css/main.css -u autoprefixer cssnano -o src/css/main.css",
-    "tailwind": "postcss dist/scss/vector/tailwind.css -o src/css/tailwind.css",
-    "scss": "node-sass dist/scss/main.scss -o src/css",
+    "tailwind": "tailwindcss build dist/scss/vector/tailwind.css -o src/css/tailwind.css",    "scss": "node-sass dist/scss/main.scss -o src/css",
     "imgmin": "imagemin dist/img/* -o src/img/",
     "terser": "terser dist/js/*.js -c -o src/js/app.js",
     "build:css": "run-s scss postcss",
