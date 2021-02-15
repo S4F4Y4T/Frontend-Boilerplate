@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postcss": "postcss src/css/main.css -u autoprefixer cssnano -o src/css/main.css",
+    "tailwind": "postcss dist/scss/vector/tailwind.css -o src/css/tailwind.css",
     "scss": "node-sass dist/scss/main.scss -o src/css",
     "imgmin": "imagemin dist/img/* -o src/img/",
     "terser": "terser dist/js/*.js -c -o src/js/app.js",
@@ -17,7 +18,7 @@
     "watch:img": "onchange \"dist/img\" run-s build:img",
     "server": "browser-sync start --server --files \"dist/scss/**/*.scss, dist/js/*.js, *.html, !node_modules/**/*.html\"",
     "watch": "run-p server watch:*",
-    "install": "run-s build watch"
+    "scripts": "run-s build watch"
   },
   "author": "",
   "license": "ISC",
