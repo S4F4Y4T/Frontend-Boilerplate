@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">React-crud</h3>
+  <h3 align="center">Frontend-Boilerplate</h3>
   <p>Crud using react only</p>
 </div>
 
