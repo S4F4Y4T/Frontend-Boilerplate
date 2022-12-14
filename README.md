@@ -67,15 +67,19 @@ Before installing the script you need some external dependencies on your machine
 
 1. Clone the repo
    ```sh
-   https://github.com/S4F4Y4T/Frontend-Boilerplate.git
+   git clone https://github.com/S4F4Y4T/Frontend-Boilerplate.git
+   ```
+2. Install the packages
+   ```sh
+   npm install
    ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Runs the task runner
+Start the task runner
 
-### `npm install`
+### `npm run start`
 
 The page will reload when you make changes.
 
