@@ -96,11 +96,15 @@ Start the task runner by following commands
 
 #### Npm Script
 
-  ### `npm run start`
+  ```sh
+   npm run start
+   ```
   
 #### Gulp
 
-  ### `gulp`
+  ```sh
+   gulp
+   ```
 
 Task runner will auto compile and reload the browser when you make changes on html or dist directory
 
