@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3 align="center">Frontend-Boilerplate</h3>
-  <p>Crud using react only</p>
+  <p>Using NPM-Scripts And GULP </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -38,15 +38,15 @@ You can save a lot of time by using a set of boilerplate files for your project 
 
 ### Built With
 
-In this boilerplate i used both tasks runner gulp and npm scripts to automated my common tasks. Tasks runner are configured to run the following functions
+In this boilerplate i used both tasks runner GULP version 4 and npm scripts to automated my common tasks. Tasks runner are configured to run the following functions
 
 * Compile SCSS to css
-* Beautify 
+* Beautify css and js
 * Autoprefix and minify the CSS file
 * Minify Js
 * Minify Images
-* Watch your SCSS files directory compile on changes
-* Browser sync to auto refresh browser after any changes
+* Watch your SCSS and JS files directory and auto compile on changes
+* Browser sync to auto reload browser after any changes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,9 +58,16 @@ By following the instructions you can run the script on your machine
 ### Prerequisites
 
 Before installing the script you need some external dependencies on your machine
+
 * nodejs
   ```sh
   sudo apt install nodejs
+  ```  
+#### Gulp
+
+* Gulp-cli
+  ```sh
+  sudo npm install gulp-cli -g
   ```
 
 ### Installation
@@ -69,7 +76,15 @@ Before installing the script you need some external dependencies on your machine
    ```sh
    git clone https://github.com/S4F4Y4T/Frontend-Boilerplate.git
    ```
-2. Install the packages
+#### Npm Script
+
+  * Rename npm-package.json to package.json
+
+#### Gulp
+
+  * Rename gulp-package.json to package.json
+
+3. Install the packages
    ```sh
    npm install
    ```
@@ -77,14 +92,19 @@ Before installing the script you need some external dependencies on your machine
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Start the task runner
+Start the task runner by following commands
 
-### `npm run start`
+#### Npm Script
 
-The page will reload when you make changes.
+  ### `npm run start`
+  
+#### Gulp
+
+  ### `gulp`
+
+Task runner will auto compile and reload the browser when you make changes on html or dist directory
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 ## License
