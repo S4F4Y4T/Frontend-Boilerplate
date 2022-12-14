@@ -86,7 +86,6 @@ In this boilerplate i used both tasks runner GULP version 4 and npm scripts to a
     |   |– tailwind.css     # third party
     |   ...                 # Etc…
     |
-    |
     – main.scss             # Main Sass file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
