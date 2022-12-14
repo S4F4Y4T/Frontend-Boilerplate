@@ -50,45 +50,44 @@ In this boilerplate i used both tasks runner GULP version 4 and npm scripts to a
 
 #### Directory structures for SASS
 
-sass/
-|
-|– abstact/
-|   |– function.scss    # Reusable functions
-|   |– mixin.scss       # Mixix
-|   |– variable.scss    # Variable
-|   ...                 # Etc…
-|
-|– base/
-|   |– animation.scss   # Animation style
-|   |– base.scss        # Base
-|   |– utilities.scss   # Utilities
-|   |– typography.scss  # Typography rules
-|   ...                 # Etc…
-|
-|– components/
-|   |– buttons.scss     # Buttons
-|   |– carousel.scss    # Carousel
-|   |– card.scss        # Card
-|   ...                 # Etc…
-|
-|– layout/
-|   |– navigation.scss  # Navigation
-|   |– grid.scss        # Grid system
-|   |– header.scss      # Header
-|   |– footer.scss      # Footer
-|   |– sidebar.scss     # Sidebar
-|   ...                 # Etc…
-|
-|– pages/
-|   |– home.scss        # Home specific styles
-|   ...                 # Etc…
-|
-|– vector/
-|   |– tailwind.css   # third party
-|   ...                # Etc…
-|
-|
-`– main.scss             # Main Sass file
+    scss/
+    ├── abstact                   
+    |   |– function.scss    # Reusable functions
+    |   |– mixin.scss       # Mixix
+    |   |– variable.scss    # Variable
+    |   ...                 # Etc…
+    |
+    ├── base                   
+    |   |– animation.scss   # Animation style
+    |   |– base.scss        # Base
+    |   |– utilities.scss   # Utilities
+    |   |– typography.scss  # Typography rules
+    |   ...                 # Etc…
+    |
+    |– components/
+    |   |– buttons.scss     # Buttons
+    |   |– carousel.scss    # Carousel
+    |   |– card.scss        # Card
+    |   ...                 # Etc…
+    |
+    |– layout/
+    |   |– navigation.scss  # Navigation
+    |   |– grid.scss        # Grid system
+    |   |– header.scss      # Header
+    |   |– footer.scss      # Footer
+    |   |– sidebar.scss     # Sidebar
+    |   ...                 # Etc…
+    |
+    |– pages/
+    |   |– home.scss        # Home specific styles
+    |   ...                 # Etc…
+    |
+    |– vector/
+    |   |– tailwind.css     # third party
+    |   ...                 # Etc…
+    |
+    |
+    – main.scss             # Main Sass file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
