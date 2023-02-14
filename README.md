@@ -2,7 +2,6 @@
 
 <div align="center">
   <h3 align="center">Frontend-Boilerplate</h3>
-  <p>Using NPM-Scripts And GULP </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
